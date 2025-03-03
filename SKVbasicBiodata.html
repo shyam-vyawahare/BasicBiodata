@@ -9,50 +9,143 @@
     background-image: url('bg.jpeg'); /* Replace with your image path */
     background-size: cover; /* Ensures the image covers the entire page */
     background-position: center; /* Centers the image */
-    background-repeat: no-repeat; /* Prevents repeating */
+    background-repeat: repeat; /* Prevents or keeps repeating */
     color: white; /* Adjust text color for visibility */
-    }
+  }
   body{
     font-family:Arial, sans-serif;
     background-color:lightgray;
   }
+  img {
+    display: block; /* Makes it a block-level element */
+    margin: 5px auto; /* Centers it horizontally */
+    width: 150px;
+    height: auto;
+  }
+  .text{
+    overflow:hidden;
+  }
+  .clear {
+    clear:both;
+  }
+  .container {
+    display: flex;
+    flex-direction: column; /* Default: Stack for mobile */
+    margin-bottom: 5px;
+  }
+  .section {
+    /* background-color: #f0f0f0; */
+    padding: 20px;
+    font-size:18px;
+    margin-bottom:20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: rgba(100, 100, 100, 0.3); /* Light gray with 30% opacity */
+    border-radius: 10px; /* Optional: Adds rounded corners */
+
+    /* text-align: center; */
+  }
+  .sec {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(100, 100, 100, 0.3); /* Light gray with 30% opacity */
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .sec2 {
+    background-color: rgba(100, 100, 100, 0.3); /* Light gray with 30% opacity */
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  /* Desktop View: Two Columns */
+  @media (min-width: 768px) {
+    .container {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .section {
+      width: 48%; /* Adjust width for two equal columns */
+      margin-bottom:10px;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    .sec {
+      width: 25%;
+      background-color: rgba(100, 100, 100, 0.3); /* Light gray with 30% opacity */
+      border-radius: 10px;
+      padding: 10px;
+      margin-top: 5px;
+    }
+    .sec2 {
+      width: 75%;
+      background-color: rgba(100, 100, 100, 0.3); /* Light gray with 30% opacity */
+      border-radius: 10px;
+      padding: 10px;
+      margin-top: 5px;
+    }
+  }
   </style>
 </head>
 <body>
-  <h3>Hello there, I'm <span style="font-size:45px; color:yellow; font-weight:bold">Shyam Vyawahare</span></h3>
-  <img src= "shyam.jpg" width="343" lang="100">This is my picture</ing>
-  <h2 style="color:black;background-color:yellow"><b>Shyam Kashinath Vyawahare</b></h2>
+  <div class="container">
+    <div class="sec">
+      <img src= "shyam.jpg">
+    </div>
+    <div class="sec2">
+      <h3>Hello there, I'm</h3> <b style="font-size:45px; color:yellow; font-weight:bold">Shyam Kashinath Vyawahare</b>
+      <p>I am a responsible and self-reliant individual with a strong ability to excel in independent assignments. With a keen curiosity and passion, I thrive in flexible environments that foster creativity.</p>
+    </div>
+    </img>
+    <div class="clear"></div>
+  </div>
   <p class="my-text">
-    <div>
-      <b><h2>Education</h2></b>
-      <h3>◉ Secondary Education from : 
-      <b style="color:yellow">Sharda English School, Kaij.</b></h3>
-      <h3>◉ Higher Secondary Graduate from : 
-      <b style="color:yellow">Arts, Commerse and Science College, Dharur.</b></h3>
-      <h3>◉ Currently persuing: 
-      <b style="color:yellow"> BTech Electronics and Computer Engineering</b></h3>
-      <h3>◉ College : 
-      <b style="color:yellow">MBES's College of Engineering, Ambajogai.</b></h3>
-      <h3>◉ University : 
-      <b style="color:yellow">Dr.Babasaheb Ambedkar Technological University, Lonere.</b></h3>
+    <div class="container">
+      <div class="section">
+        <b><h2 style="color:black; background-color:yellow">Education</h2></b>
+        <h3>◉ Secondary Education from : 
+        <b style="color:yellow">Sharda English School, Kaij.</b></h3>
+        <h3>◉ Higher Secondary Graduate from : 
+        <b style="color:yellow">Arts, Commerse and Science College, Dharur.</b></h3>
+        <h3>◉ Currently persuing : 
+        <b style="color:yellow"> BTech Electronics and Computer Engineering</b></h3>
+        <h3>◉ College : 
+        <b style="color:yellow">MBES's College of Engineering, Ambajogai.</b></h3>
+        <h3>◉ University : 
+        <b style="color:yellow">Dr.Babasaheb Ambedkar Technological University, Lonere.</b></h3>
+      </div>
+      <div class="section">
+        <b><h2 style="color:black; background-color:yellow">Strengths</h2></b>
+        <h3>◉ Team leader : <b style="color:yellow">Guides teams effectively and steers members toward goals.</b></h3>
+        <h3>◉ Analytical skills : <b style="color:yellow">Possesses great analytical and problem-solving skills.</b></h3>
+        <h3>◉ Creative thinking : <b style="color:yellow">Creative thinker capable of generating innovative solutions.</b></h3>
+        <h3>◉ Adapatibility : <b style="color:yellow">Adaptable to various situations in dynamic environments.</b></h3>
+        <h3>◉ Communication skills : <b style="color:yellow">Handles criticism well and communicates effectively.</b></h3>
+      </div>
     </div>
-  </p><br>
+  </p>
   <p>
-    <div>
-      <b><h2>Languages</h2></b>
-      <h3>◉ English : <b style="color:yellow">Advanced</b></h3>
-      <h3>◉ Marathi : <b style="color:yellow">Proficient</b></h3>
-      <h3>◉ Hindi : <b style="color:yellow">Proficient</b></h3>
-    </div>
-  </p><br>
-  <p>
-    <div>
-      <b><h2>Contacts</h2></b>
-      <h3>◉ Mobile Number : <b style="color:yellow">9860335064</b></h3>
-      <h3>◉ Email ID : <a style="color:yellow" href="shyamvyawahare1@gmail.com">shyamvyawahare1@gmail.com</a></h3>
-      <h3>◉ Linkedin profile : <a style="color:yellow" href="https://in.linkedin.com/in/shyam-vyawahare-9ab206327">Follow me on Linkedin</a></h3>
-      <h3>◉ You can see my Instagram : <a style="color:yellow" href="https://www.instagram.com/shyam_v_?igsh=MTI3d2wwZjl3ZnRwMg==">Follow me on Instagram</a></h3>
+    <div class="container">
+      <div class="section">
+        <b><h2 style="color:black; background-color:yellow">Languages</h2></b>
+        <h3>◉ English : <b style="color:yellow">Advanced</b></h3>
+        <h3>◉ Marathi : <b style="color:yellow">Proficient</b></h3>
+        <h3>◉ Hindi : <b style="color:yellow">Proficient</b></h3>
+      </div>
+      <div class="section">
+        <b><h2 style="color:black; background-color:yellow">Contacts</h2></b>
+        <h3>◉ Mobile Number : <b style="color:yellow">9860335064</b></h3>
+        <h3>◉ Email ID : <a style="color:yellow" href="https://mail.google.com/mail/?view=cm&fs=1&to=shyamvyawahare1@gmail.com">shyamvyawahare1@gmail.com</a></h3>
+        <h3>◉ Linkedin profile : <a style="color:yellow" href="https://in.linkedin.com/in/shyam-vyawahare-9ab206327">Follow me on Linkedin</a></h3>
+        <h3>◉ You can see my Instagram : <a style="color:yellow" href="https://www.instagram.com/shyam_v_?igsh=MTI3d2wwZjl3ZnRwMg==">Follow me on Instagram</a></h3>
+      </div>
     </div>
   </p><br>
 </body>
 </html>
+          
