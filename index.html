@@ -3,7 +3,8 @@
 <html>
 <head>
   <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
-  <title>SKV Introduction!</title>
+  <title>SKV Portfolio</title>
+  <link rel="shortcut icon" href="SKVicon.jpg" type="image">
   <style>
   body {
     background-image: url('bg.jpeg'); /* Replace with your image path */
@@ -11,16 +12,39 @@
     background-position: center; /* Centers the image */
     background-repeat: repeat; /* Prevents or keeps repeating */
     color: white; /* Adjust text color for visibility */
-  }
-  body{
     font-family:Arial, sans-serif;
     background-color:lightgray;
+  }
+  .title-name {
+    color: black;
+    background-image: linear-gradient(to bottom right,orange,gold,darkorange);
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;  /* Centers icon + text inside */
+    align-items: center;  /* Centers icon + text vertically */
+    text-align: center;  /* Centers only the text & icon */
+    padding: 7px;
+    width: 100%;
+    margin: 0;
+    gap: 10px;
+    position:relative;
+  }
+  .title-icon {
+    width: 40px; /* Adjust size */
+    height: 40px;
+    margin-right: 12px; /* Space between icon and text */
+    vertical-align: middle; /* Aligns image with text */
+    border-radius: 100%;
+    display: inline-block;
+    align-items: center;
+    margin: 0;
   }
   img {
     display: block; /* Makes it a block-level element */
     margin: 5px auto; /* Centers it horizontally */
     width: 150px;
     height: auto;
+    border-radius: 10px;
   }
   .text{
     overflow:hidden;
@@ -32,18 +56,18 @@
     display: flex;
     flex-direction: column; /* Default: Stack for mobile */
     margin-bottom: 5px;
+    justify-content: center;
   }
   .section {
-    /* background-color: #f0f0f0; */
+    /*text-align: left; /* Keeps section content left-aligned */
+    align-items: center;
     padding: 20px;
-    font-size:18px;
-    margin-bottom:20px;
+    font-size: 18px;
+    margin-bottom: 20px;
     margin-left: 10px;
-    margin-right: 10px;
-    background-color: rgba(100, 100, 100, 0.3); /* Light gray with 30% opacity */
-    border-radius: 10px; /* Optional: Adds rounded corners */
-
-    /* text-align: center; */
+    margin-right: 20px;
+    background-color: rgba(100, 100, 100, 0.3);
+    border-radius: 40px;
   }
   .sec {
     display: flex;
@@ -52,6 +76,7 @@
     border-radius: 10px;
     padding: 20px;
     margin-top: 5px;
+    margin-bottom: 10px;
     margin-left: 10px;
     margin-right: 10px;
   }
@@ -60,20 +85,43 @@
     border-radius: 10px;
     padding: 20px;
     margin-top: 5px;
+    margin-bottom: 10px;
     margin-left: 10px;
     margin-right: 10px;
   }
   /* Desktop View: Two Columns */
   @media (min-width: 768px) {
     .container {
+      width:100%;
       flex-direction: row;
-      justify-content: space-between;
+      display:flex;
+      align-items:stretch;
+    }
+    .bio-container {
+      width:100%;
+      display: flex;
+      justify-content: center; /* Centers content properly */
+      gap: 20px; /* Adds equal space in the middle */
+      align-items: stretch;
+      flex-wrap: wrap;
+      margin-right:20px;
+      margin-left:-10px; /* Delets extra margin caused by new container */
+      margin-bottom: 5px;
     }
     .section {
-      width: 48%; /* Adjust width for two equal columns */
+      width: 100%; /* Adjust width for two equal columns */
+      margin: 10px p;
       margin-bottom:10px;
       margin-left: 10px;
       margin-right: 10px;
+      box-sizing: border-box;
+    }
+    .left-column, .right-column{
+      display: flex;
+      flex-direction: column;
+      width: 48%; /* Keep it same width as before */
+      align-items:stretch;
+      margin-bottom: 5px;
     }
     .sec {
       width: 25%;
@@ -81,6 +129,7 @@
       border-radius: 10px;
       padding: 10px;
       margin-top: 5px;
+      margin-bottom:10px;
     }
     .sec2 {
       width: 75%;
@@ -88,6 +137,7 @@
       border-radius: 10px;
       padding: 10px;
       margin-top: 5px;
+      margin-bottom:10px;
     }
   }
   </style>
@@ -98,53 +148,115 @@
       <img src= "shyam.jpg">
     </div>
     <div class="sec2">
-      <h3>Hello there, I'm</h3> <b style="font-size:45px; color:yellow; font-weight:bold">Shyam Kashinath Vyawahare</b>
-      <p>I am a responsible and self-reliant individual with a strong ability to excel in independent assignments. With a keen curiosity and passion, I thrive in flexible environments that foster creativity.</p>
+      <h3>Hello there, I'm</h3> <b style="font-size:50px; color:yellow; font-weight:bold">Shyam Kashinath Vyawahare</b>
+      <h3><b style="color:yellow; font-weight:bold">BTech E&CE Under Graduate</b></h3>
+      <h3>I am a responsible and self-reliant individual with a strong ability to excel in independent assignments. With a keen curiosity and passion, I thrive in flexible environments that foster creativity.</h3>
     </div>
     </img>
     <div class="clear"></div>
   </div>
-  <p class="my-text">
-    <div class="container">
-      <div class="section">
-        <b><h2 style="color:black; background-color:yellow">Education</h2></b>
-        <h3>◉ Secondary Education from : 
-        <b style="color:yellow">Sharda English School, Kaij.</b></h3>
-        <h3>◉ Higher Secondary Graduate from : 
-        <b style="color:yellow">Arts, Commerse and Science College, Dharur.</b></h3>
-        <h3>◉ Currently persuing : 
-        <b style="color:yellow"> BTech Electronics and Computer Engineering</b></h3>
-        <h3>◉ College : 
-        <b style="color:yellow">MBES's College of Engineering, Ambajogai.</b></h3>
-        <h3>◉ University : 
-        <b style="color:yellow">Dr.Babasaheb Ambedkar Technological University, Lonere.</b></h3>
-      </div>
-      <div class="section">
-        <b><h2 style="color:black; background-color:yellow">Strengths</h2></b>
-        <h3>◉ Team leader : <b style="color:yellow">Guides teams effectively and steers members toward goals.</b></h3>
-        <h3>◉ Analytical skills : <b style="color:yellow">Possesses great analytical and problem-solving skills.</b></h3>
-        <h3>◉ Creative thinking : <b style="color:yellow">Creative thinker capable of generating innovative solutions.</b></h3>
-        <h3>◉ Adapatibility : <b style="color:yellow">Adaptable to various situations in dynamic environments.</b></h3>
-        <h3>◉ Communication skills : <b style="color:yellow">Handles criticism well and communicates effectively.</b></h3>
-      </div>
+  <div class="container">
+    <div class="section">
+      <h2 class="title-name"><img src="edu.png" alt="Icon" class="title-icon">
+        <b>EDUCATION</b></h2>
+      <h3>◉ Secondary Education from : 
+      <b style="color:yellow">Sharda English School, Kaij.</b></h3>
+      <h3>◉ Higher Secondary Graduate from : 
+      <b style="color:yellow">Arts, Commerse and Science College, Dharur.</b></h3>
+      <h3>◉ Currently persuing : 
+      <b style="color:yellow"> BTech Electronics and Computer Engineering</b></h3>
+      <h3>◉ College : 
+      <b style="color:yellow">MBES's College of Engineering, Ambajogai.</b></h3>
+      <h3>◉ University : 
+      <b style="color:yellow">Dr.Babasaheb Ambedkar Technological University, Lonere.</b></h3>
     </div>
-  </p>
-  <p>
-    <div class="container">
+    <div class="section">
+      <h2 class="title-name"><img src="str.jpg" alt="Icon" class="title-icon">
+        <b>STRENGTHS</b></h2>
+      <h3>◉ Team leader : <b style="color:yellow">Guides teams effectively and steers members toward goals.</b></h3>
+      <h3>◉ Analytical skills : <b style="color:yellow">Possesses great analytical and problem-solving skills.</b></h3>
+      <h3>◉ Creative thinking : <b style="color:yellow">Creative thinker capable of generating innovative solutions.</b></h3>
+      <h3>◉ Adapatibility : <b style="color:yellow">Adaptable to various situations in dynamic environments.</b></h3>
+      <h3>◉ Communication skills : <b style="color:yellow">Handles criticism well and communicates effectively.</b></h3>
+    </div>
+  </div>
+  <div class="bio-container">
+    <div class="left-column">
       <div class="section">
-        <b><h2 style="color:black; background-color:yellow">Languages</h2></b>
+        <h2 class="title-name"><img src="lang.png" alt="Icon" class="title-icon">
+          <b>LANGUAGES</b></h2>
         <h3>◉ English : <b style="color:yellow">Advanced</b></h3>
         <h3>◉ Marathi : <b style="color:yellow">Proficient</b></h3>
         <h3>◉ Hindi : <b style="color:yellow">Proficient</b></h3>
       </div>
       <div class="section">
-        <b><h2 style="color:black; background-color:yellow">Contacts</h2></b>
-        <h3>◉ Mobile Number : <b style="color:yellow">9860335064</b></h3>
-        <h3>◉ Email ID : <a style="color:yellow" href="https://mail.google.com/mail/?view=cm&fs=1&to=shyamvyawahare1@gmail.com">shyamvyawahare1@gmail.com</a></h3>
-        <h3>◉ Linkedin profile : <a style="color:yellow" href="https://in.linkedin.com/in/shyam-vyawahare-9ab206327">Follow me on Linkedin</a></h3>
-        <h3>◉ You can see my Instagram : <a style="color:yellow" href="https://www.instagram.com/shyam_v_?igsh=MTI3d2wwZjl3ZnRwMg==">Follow me on Instagram</a></h3>
+        <h2 class="title-name"><img src="intre.png" alt="Icon" class="title-icon">
+          <b>INTRESTS</b></h2>
+        <h3>◉ Web Development : <b style="color:yellow">Passionate about creating responsive websites and exploring front-end and back-end technologies.</b></h3>
+        <h3>◉ AI & Machine Learning : <b style="color:yellow">Exploring intelligent systems, data-driven algorithms, and automation to understand real-world applications.</b></h3>
+        <h3>◉ Cinematography : <b style="color:yellow">Enjoy watching movies while exploring the art of cinematography, visual storytelling, CGI, and VFX to understand the techniques behind filmmaking.</b></h3>
+        <h3>◉ Technological curiosity : <b style="color:yellow">Passionate about exploring emerging technologies, understanding how things work, and staying updated on innovations in tech, AI, and software development.</b></h3>
+        <h3>◉ Graphic Design : <b style="color:yellow">Creating visually appealing designs and exploring digital art, logos and ideas for creating UI/UX</b></h3>        
       </div>
     </div>
-  </p><br>
+    <div class="right-column">
+      <div class="section">
+        <h2 class="title-name"><img src="skills.jpg" alt="Icon" class="title-icon">
+          <b>SKILLS</b></h2>
+        <h3>◉ Microsoft office tools : <b style="color:yellow">Highly proficient in Microsoft Word, Excel, and PowerPoint with strong hands-on experience.</b></h3>
+        <h3>◉ Programming : <b style="color:yellow">Proficient in Java, Python, and HTML, with a solid understanding of CSS.</b></h3>
+        <h3>◉ Editing and Design : <b style="color:yellow">Creative in image and video editing, adept at logo design, and good hand in typing.</b></h3>
+        <h3>◉ Art : <b style="color:yellow">Talented in sketching, drawing, and painting, with a strong artistic sense and precision in replicating artwork.</b></h3>
+        <h3>◉ Content creation : <b style="color:yellow">Skilled in storytelling and writing, with moderate proficiency in scriptwriting and poetry.</b></h3>
+      </div>
+      <div class="section">
+        <h2 class="title-name"><img src="hobby.png" alt="Icon" class="title-icon">
+          <b>HOBBIES</b></h2>
+        <h3>◉ Brain games : <b style="color:yellow">I enjoy playing chess, solving Rubik's cubes, Sudoku, and engaging in brain teaser games and video games that challenge my thinking.</b></h3>
+        <h3>◉ Sketching : <b style="color:yellow">Expressing creativity on paper and digital sketches, shading, perspectives, and character design.</b></h3>
+        <h3>◉ YouTube Content Watching : <b style="color:yellow">Exploring diverse content, from educational videos to entertainment and tech trends.</b></h3>
+      </div> 
+    </div>
+  </div>
+  <div class="container">
+    <div class="section">
+      <h2 class="title-name"><img src="exp.png" alt="Icon" class="title-icon">
+        <b>EXPERIENCES</b></h2>
+      <h3>◉ PocketNovel – Online Platform : <b style="color:yellow"> 
+        <ul>
+          <li>Wrote a story novel on the PocketNovel platform with over 350+ chapters, each containing 2,500 words.</li>
+          <li>Also wrote three trial novels with a few chapters each, in both English and Hindi.</li>
+          <li>Gained 1 year of online working experience, developing storytelling skills and engaging a digital readership.</li>
+        </ul></b></h3>
+    </div>
+    <div class="section">
+      <h2 class="title-name"><img src="projects.png" alt="Icon" class="title-icon">
+        <b>PROJECTS</b></h2>
+      <h3>◉ Bank ATM Simulator – Java Mini Project : <b style="color:yellow">
+        <ul>
+          <li>Developed a Bank ATM Simulator as a college mini project, replicating real ATM functionalities.</li>
+          <li>Built using Java for the front-end and MySQL Workbench for database management.</li>
+          <li>Simulated ATM operations such as account authentication, balance inquiry, deposits, and withdrawals.</li>
+          <li>Designed to run on the system where it was developed, showcasing practical implementation of OOP concepts and database connectivity.</li>
+        </ul>
+      </b></h3>
+    </div>
+  </div>
+  <div class="container">
+    <div class="section">
+      <h2 class="title-name"><img src="socialm.png" alt="Icon" class="title-icon">
+        <b>ONLINE PRESENCE</b></h2>
+      <h3>◉ Linkedin profile : <a style="color:yellow" href="https://in.linkedin.com/in/shyam-vyawahare-9ab206327" target="_blank" title="Visit Linkedin">Follow me on Linkedin</a></h3>
+      <h3>◉ PocketNovel profile : <a style="color:yellow" href="https://www.pocketnovel.com/novel/d6c89d88b264a6ed80bc9469218396c92aed2ec9" target="_blank" title="Read Novel">Checkout my PocketNovel</a></h3>
+      <h3>◉ Instagram : <a style="color:yellow" href="https://www.instagram.com/shyam_v_?igsh=MTI3d2wwZjl3ZnRwMg==" target="_blank" title="Visit Instagram">Follow me on Instagram</a></h3>
+    </div>
+    <div class="section">
+      <h2 class="title-name"><img src="contacts.png" alt="Icon" class="title-icon">
+        <b>CONTACTS</b></h2>
+      <h3>◉ Mobile number : <b style="color:yellow">9860335064</b></h3>
+      <h3>◉ Email ID : <a style="color:yellow" href="https://mail.google.com/mail/?view=cm&fs=1&to=shyamvyawahare1@gmail.com" target="_blank" title="Visit Gmail">shyamvyawahare1@gmail.com</a></h3>
+      <h3>◉ Address : <b style="color:yellow">Ambajogai, Maharashtra</b></h3>
+    </div>
+  </div>
 </body>
 </html>
