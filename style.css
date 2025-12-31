@@ -1,0 +1,151 @@
+body {
+    background-image: url('bg.jpeg');
+    background-size: cover; /* Ensures the image covers the entire page */
+    background-position: center; /* Centers the image */
+    background-repeat: repeat; /* Prevents or keeps repeating */
+    color: white; /* Adjust text color for visibility */
+    font-family:Arial, sans-serif;
+    background-color:lightgray;
+}
+.title-name{
+    color: black;
+    background-image: linear-gradient(to bottom right,orange,gold,darkorange);
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;  /* Centers icon + text inside */
+    align-items: center;  /* Centers icon + text vertically */
+    text-align: center;  /* Centers only the text & icon */
+    padding: 7px;
+    width: 100%;
+    margin: 0;
+    gap: 10px;
+    position:relative;
+}
+.title-icon {
+    width: 40px; /* Adjust size */
+    height: 40px;
+    margin-right: 12px; /* Space between icon and text */
+    vertical-align: middle; /* Aligns image with text */
+    border-radius: 100%;
+    display: inline-block;
+    align-items: center;
+    margin: 0;
+}
+img {
+    display: block; /* Makes it a block-level element */
+    margin: 5px auto; /* Centers it horizontally */
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+}
+.text{
+    overflow:hidden;
+}
+.clear {
+    clear:both;
+}
+.container {
+    display: flex;
+    flex-direction: column; /* Default: Stack for mobile */
+    margin-bottom: 5px;
+    justify-content: center;
+}
+.section {
+    width: auto;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: rgba(100, 100, 100, 0.3);
+    border-radius: 40px;
+}
+.sec {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    background-image: url(skvbg1.jpg);
+    background-size: cover;     
+    box-sizing: border-box;    
+    background-position: center; 
+    background-repeat: no-repeat;
+    border-radius: 40px;
+    padding: 20px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.sec2 {
+    width: 96%;
+    height: 50%;
+    padding: 10px;
+    text-align: center;
+    margin-top: -35px;
+    margin-bottom: 200px;
+    margin-right: auto;
+    margin-left: auto;
+}
+/* Desktop View: Two Columns */
+@media (min-width: 768px) {
+  .container {
+      width:100%;
+      flex-direction: row;
+      display:flex;
+      align-items:stretch;
+  }
+  .bio-container {
+      width:100%;
+      display: flex;
+      justify-content: center; /* Centers content properly */
+      gap: 20px; /* Adds equal space in the middle */
+      align-items: stretch;
+      flex-wrap: wrap;
+      margin-right:20px;
+      margin-left:-10px; /* Delets extra margin caused by new container */
+      margin-bottom: 5px;
+  }
+  .section {
+      width: 100%; /* Adjust width for two equal columns */
+      margin: 10px p;
+      margin-bottom:10px;
+      margin-left: 10px;
+      margin-right: 10px;
+      box-sizing: border-box;
+  }
+  .left-column, .right-column{
+      display: flex;
+      flex-direction: column;
+      width: 48%; /* Keep it same width as before */
+      align-items:stretch;
+      margin-bottom: 5px;
+  }
+  .sec{
+      width: auto;
+      flex-direction: row;
+      display:flex;
+      align-items:stretch;
+      padding: 10px;
+      margin-top: 5px;
+      margin-bottom:10px;
+      margin-right: 10px;
+      margin-left: 10px;
+      border-radius: 30px;
+      background-image: url(skvbg.jpg);
+      background-size: cover;         
+      background-position: center; 
+      background-repeat: no-repeat;
+  }
+  .sec2 {
+      width: 90%;
+      text-align: center;
+      padding: 10px;
+      margin-top: 5px;
+      margin-bottom:10px;
+      margin-right: 10px;
+      margin-left: 30%;
+  }
+}
+  }
